@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Drones.xsd">
+    <dron>
+        <modelo tipo="Aéreo">DJI Mavic 2 Zoom</modelo>
+        <metodo_de_vuelo>Control remoto</metodo_de_vuelo>
+        <video>Sí</video>
+        <fotografia>Sí</fotografia>
+        <dimensiones peso="905g">
+            <plegado>214×91×84 mm (largo × ancho × alto)</plegado>
+            <desplegado>322×242×84 mm (largo × ancho × alto)</desplegado>
+        </dimensiones>
+        <caracteristicas>
+            <conectividad>Sí</conectividad>
+            <potencia_bateria>80 W</potencia_bateria>
+            <autonomia_de_vuelo>31 min</autonomia_de_vuelo>
+            <alcance>8000 m</alcance>
+            <sistemas_operativos>IOS 9.0 o posterior</sistemas_operativos>
+            <sistemas_operativos>Android 5.0 o posterior</sistemas_operativos>
+        </caracteristicas>
+        <imagen_de_dron>dron.jpg</imagen_de_dron>
+        <precio>1099,00 €</precio>
+        <url>https://visanta.com/drones/13957-drone-dji-mavic-2-zoom-6958265174452.html?search_query=dji%20&amp;fast_search=fs</url>
+        <comentarios>Una compra recomendada para quien se inicia o viene de otro dron de una gama más baja(Por ejemplo como un Mavic Air).</comentarios>
+    </dron>
+</drones>

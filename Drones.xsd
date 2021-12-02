@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="drones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dron">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="modelo">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="Aéreo"/>
+                                                        <xs:enumeration value="Terrestre"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="metodo_de_vuelo">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Control remoto"/>
+                                        <xs:enumeration value="Control por tablet/smartphone"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="video" type="xs:string" />
+                            <xs:element name="fotografia" type="xs:string" />
+                            <xs:element name="dimensiones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="plegado" type="xs:string" />
+                                        <xs:element name="desplegado" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="peso" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="caracteristicas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="conectividad" type="xs:string" />
+                                        <xs:element name="potencia_bateria" type="xs:string" />
+                                        <xs:element name="autonomia_de_vuelo" type="xs:string" />
+                                        <xs:element name="alcance" type="xs:string" />
+                                        <xs:element name="sistemas_operativos" type="xs:string" maxOccurs="4" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="imagen_de_dron" type="xs:string" />
+                            <xs:element name="precio" type="xs:string" />
+                            <xs:element name="url" type="xs:string" />
+                            <xs:element name="comentarios" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
